@@ -1,8 +1,4 @@
-﻿
-// RunServerDlg.cpp: 구현 파일
-//
-
-#include "pch.h"
+﻿#include "pch.h"
 #include "framework.h"
 #include "RunServer.h"
 #include "RunServerDlg.h"
@@ -101,10 +97,8 @@ BOOL CRunServerDlg::OnInitDialog()
 		}
 	}
 
-	// 이 대화 상자의 아이콘을 설정합니다.  응용 프로그램의 주 창이 대화 상자가 아닐 경우에는
-	//  프레임워크가 이 작업을 자동으로 수행합니다.
-	SetIcon(m_hIcon, TRUE);			// 큰 아이콘을 설정합니다.
-	SetIcon(m_hIcon, FALSE);		// 작은 아이콘을 설정합니다.
+	SetIcon(m_hIcon, TRUE);
+	SetIcon(m_hIcon, FALSE);
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
 	for (int i = 0; i < MAX_CLIENT_COUNT; i++) {
@@ -114,7 +108,7 @@ BOOL CRunServerDlg::OnInitDialog()
 	m_socServer.Create(5000);
 	m_socServer.Listen();
 	m_socServer.Init(this->m_hWnd);
-	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
+	return TRUE;
 }
 
 void CRunServerDlg::OnSysCommand(UINT nID, LPARAM lParam)
@@ -246,4 +240,3 @@ LPARAM CRunServerDlg::OnReceive(WPARAM wParam, LPARAM lParam)
 	}
 	return TRUE;
 }
-

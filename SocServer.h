@@ -20,5 +20,3 @@ public:
 	void CSocServer::Init(HWND hWnd);
 	virtual void OnAccept(int nErrorCode);
 };
-
-

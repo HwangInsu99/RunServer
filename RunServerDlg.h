@@ -1,8 +1,4 @@
-﻿
-// RunServerDlg.h: 헤더 파일
-//
-
-#pragma once
+﻿#pragma once
 
 #include "stdAfx.h"
 

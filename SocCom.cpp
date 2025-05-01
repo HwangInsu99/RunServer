@@ -1,10 +1,6 @@
-﻿// SocCom.cpp: 구현 파일
-//
-
-#include "pch.h"
+﻿#include "pch.h"
 #include "RunServer.h"
 #include "SocCom.h"
-
 
 // CSocCom
 
@@ -15,7 +11,6 @@ CSocCom::CSocCom()
 CSocCom::~CSocCom()
 {
 }
-
 
 // CSocCom 멤버 함수
 void CSocCom::Init(HWND hWnd) {

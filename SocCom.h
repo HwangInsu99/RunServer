@@ -19,5 +19,3 @@ public:
 
 	int m_index;
 };
-
-
